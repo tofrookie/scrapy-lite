@@ -5,11 +5,11 @@ import requests
 from scrapy import signals
 from scrapy.signalmanager import SignalManager
 
-from havok_lib import NAME
-from havok_lib.spiders.crawl_mechanisms import CoroCrawlMech, ThreadCrawlMech, SynCrawlMech
-from havok_lib.spiders.downloader import Request
-from havok_lib.spiders.settings import *
-from havok_lib.utils.logger import get_logger
+from scrapy_lite import NAME
+from scrapy_lite.crawl_mechanisms import CoroCrawlMech, ThreadCrawlMech, SynCrawlMech
+from scrapy_lite.downloader import Request
+from scrapy_lite.settings import *
+from scrapy_lite.logger import get_logger
 
 
 class SpiderEngine(object):
